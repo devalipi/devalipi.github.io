@@ -19,6 +19,10 @@
             max-width : 1000px;
             padding : 0;
             background : #000000;
+            font-size : 1em;
+        }
+        .footnote {
+            font-size : 0.8em;
         }
         .content {
             font-family : "Open Sans", sans-serif;
@@ -57,6 +61,7 @@
             font-size : 3em;
             line-height : 1.1;
             font-weight : 300;
+            border : #00000018 solid 1px;
         }
         .sideways-devalipi {
             font-family : devalipi, sans-serif;
@@ -69,7 +74,6 @@
         }
         .sub-cell.devalipi {
             font-size : 3.5em;
-            border : #00000018 solid 1px;
         }
         th {
             border : #000 solid 1px;
@@ -104,20 +108,23 @@
 <div class="content">
     <h1 class="devalipi">oMbhUrbhuvaHsvaH tatsaviturvareNyam bhargodevasyadhImahi dhiyoyonaHpracodayAt</h1>
     <h1>Overview</h1>
-    Devalipi is a <a href="https://en.wikipedia.org/wiki/Constructed_writing_system">constructed writing
+    <p>Devalipi is a <a href="https://en.wikipedia.org/wiki/Constructed_writing_system">constructed writing
     system</a> for <a href="https://en.wikipedia.org/wiki/Sanskrit">Sanskrit</a>, one of the most ancient and sacred languages. The purpose of Devalipi is to
     illustrate
     Sanskrit's
     highly structured phonetics and provide a self-revealing pronunciation guide via glyphs based natural
     symbolism such as tongue
-    position. Differing from most Indic scripts, it would likely be most accurate to call it an <a
+    position.</p>
+    <h1>Classification</h1>
+    <p>Differing from most Indic scripts, it would likely be most accurate to call it an <a
         href="https://en.wikipedia.org/wiki/Alphabet">alphabet</a>, as
-    the consonants and vowels are technically independent.
-    However, the vowels and consonants definitely have special treatment relative to each other. Evidently, many
+    the consonants and vowels are essentially independent.
+    However, the vowels definitely have special treatment relative to consonants. Evidently, many
     elements take
     inspiration from <a href="https://en.wikipedia.org/wiki/Abugida">abugidas</a>, like <a
-        href="https://en.wikipedia.org/wiki/Devanagari">Devanagari</a>, for example. Hence, Devalipi can possibly
-    be said to exist in its own category as an alphabet-abugida hybrid.
+        href="https://en.wikipedia.org/wiki/Devanagari">Devanagari</a>, the most common script used to render
+    Sanskrit today. Hence, Devalipi can possibly
+    be said to exist in its own category as an alphabet/abugida hybrid.</p>
     <h1>Download</h1>
     This website provides a downloadable typeface, which uses an <a href="https://en.wikipedia.org/wiki/ITRANS">
     ITRANS</a>-inpired <a href="https://en.wikipedia.org/wiki/ASCII">ASCII</a> transliteration scheme, for convenience.
@@ -126,355 +133,342 @@
     since
     ASCII encodes the <a href="https://en.wikipedia.org/wiki/Latin_alphabet">Latin alphabet</a>, which
     making for easy transliteration, given that
-    Devalipi is primarily an alphabet also.
+    Devalipi is technically an alphabet also.
     <p>&copy; Lyam Boylan |
         <a href="fonts/devalipi.ttf" download>Download Devalipi TrueType Font</a></p>
     <h1>Structure & Transliteration</h1>
-    <p>The first thing to know about Sanskrit phonetics is that they form an ordered 2-dimensional space, unlike the
-        unordered linear alphabet of English, in comparison. This structure of
+    <p>The first thing to know about Sanskrit phonetics is that they form highly structured two-dimensional grids,
+        unlike the
+        apparently random list of letters we find in the English alphabet, in comparison.</p>
+    <h1>The 'Magic Rectangle'</h1>
+    <p>This
+        precise structure of
         Sanskrit, as exemplified by
         the
-        Devalipi,
+        Devalipi
         script is best seen in
         the
-        following chart. Included in
-    each cell is the ASCII transliteration for each letter (top-left), the corresponding traditional
+        following table. In essence, this beautiful 'magic rectangle' forms the entirety of the Sanskrit sound space,
+        with
+        rows representing
+        places of articulation, and columns representing qualities of modification.
+        Included in
+    each cell is Devalipi's transliteration for each letter (top-left), the corresponding traditional
     Devanagari character or Vedic sign (bottom-left), and the Devalipi glyph (right).</p>
-    <div class="table-container"><table>
-        <tr>
-            <th></th>
-            <th>Short vowel</th>
-            <th>Long vowel</th>
-            <th colspan="4">Plosive</th>
-            <th>Nasal</th>
-            <th>Approximant</th>
-            <th>Fricative</th>
-        </tr>
-        <tr>
-            <th>Voiced</th>
-            <th>✓</th>
-            <th>✓</th>
-            <th></th>
-            <th></th>
-            <th>✓</th>
-            <th>✓</th>
-            <th>✓</th>
-            <th>✓</th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>Aspirated</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>✓</th>
-            <th></th>
-            <th>✓</th>
-            <th></th>
-            <th></th>
-            <th>✓</th>
-        </tr>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th></th>
+                <th>Vowel</th>
+                <th colspan="4">Plosive</th>
+                <th>Nasal</th>
+                <th>Approximant</th>
+                <th>Fricative</th>
+            </tr>
+            <tr>
+                <th>Voiced</th>
+                <th>✓</th>
+                <th></th>
+                <th></th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Aspirated</th>
+                <th></th>
+                <th></th>
+                <th>✓</th>
+                <th></th>
+                <th>✓</th>
+                <th></th>
+                <th><a href="#footnote-1">*</a></th>
+                <th>✓</th>
+            </tr>
 
-        <!-- Guttural row -->
-        <tr>
-            <th>Guttural</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">a<br>अ</span>
-                    <span class="sub-cell devalipi">a</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">A/aa<br>आ</span>
-                    <span class="sub-cell devalipi">A</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">k<br>क्</span>
-                    <span class="sub-cell devalipi">k</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">kh<br>ख्</span>
-                    <span class="sub-cell devalipi">kh</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">g<br>ग्</span>
-                    <span class="sub-cell devalipi">g</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">gh<br>घ्</span>
-                    <span class="sub-cell devalipi">gh</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">~N<br>ङ्</span>
-                    <span class="sub-cell devalipi">~N</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">h<br>ह्</span>
-                    <span class="sub-cell devalipi">h</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">X<br>ᳵ</span>
-                    <span class="sub-cell devalipi">X</span>
-                    <a href="#footnote-1">*</a>
-                </div>
-            </td>
-        </tr>
+            <!-- Guttural row -->
+            <tr>
+                <th>Guttural</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">a<br>अ</span>
+                        <span class="sub-cell devalipi">a</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">k<br>क्</span>
+                        <span class="sub-cell devalipi">k</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">kh<br>ख्</span>
+                        <span class="sub-cell devalipi">kh</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">g<br>ग्</span>
+                        <span class="sub-cell devalipi">g</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">gh<br>घ्</span>
+                        <span class="sub-cell devalipi">gh</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">~N<br>ङ्</span>
+                        <span class="sub-cell devalipi">~N</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">h<br>ह्</span>
+                        <span class="sub-cell devalipi">h</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">X<br>ᳵ</span>
+                        <span class="sub-cell devalipi">X</span>
+                        <a href="#footnote-2">†</a>
+                    </div>
+                </td>
+            </tr>
 
-        <!-- Palatal row -->
-        <tr>
-            <th>Palatal</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">i<br>इ</span>
-                    <span class="sub-cell devalipi">i</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">I/ii<br>ई</span>
-                    <span class="sub-cell devalipi">I</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">c<br>च्</span>
-                    <span class="sub-cell devalipi">c</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">ch<br>छ्</span>
-                    <span class="sub-cell devalipi">ch</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">j<br>ज्</span>
-                    <span class="sub-cell devalipi">j</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">jh<br>झ्</span>
-                    <span class="sub-cell devalipi">jh</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">~n<br>ञ्</span>
-                    <span class="sub-cell devalipi">~n</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">y<br>य्</span>
-                    <span class="sub-cell devalipi">y</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">sh<br>श्</span>
-                    <span class="sub-cell devalipi">sh</span>
-                </div>
-            </td>
-        </tr>
+            <!-- Palatal row -->
+            <tr>
+                <th>Palatal</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">i<br>इ</span>
+                        <span class="sub-cell devalipi">i</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">c<br>च्</span>
+                        <span class="sub-cell devalipi">c</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">ch<br>छ्</span>
+                        <span class="sub-cell devalipi">ch</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">j<br>ज्</span>
+                        <span class="sub-cell devalipi">j</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">jh<br>झ्</span>
+                        <span class="sub-cell devalipi">jh</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">~n<br>ञ्</span>
+                        <span class="sub-cell devalipi">~n</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">y<br>य्</span>
+                        <span class="sub-cell devalipi">y</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">sh<br>श्</span>
+                        <span class="sub-cell devalipi">sh</span>
+                    </div>
+                </td>
+            </tr>
 
-        <!-- Retroflex row -->
-        <tr>
-            <th>Retroflex</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">R<br>ऋ</span>
-                    <span class="sub-cell devalipi">R</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">RR<br>ॠ</span>
-                    <span class="sub-cell devalipi">RR</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">T<br>ट्</span>
-                    <span class="sub-cell devalipi">T</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">Th<br>ठ्</span>
-                    <span class="sub-cell devalipi">Th</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">D<br>ड्</span>
-                    <span class="sub-cell devalipi">D</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">Dh<br>ढ्</span>
-                    <span class="sub-cell devalipi">Dh</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">N<br>ण्</span>
-                    <span class="sub-cell devalipi">N</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">r<br>र्</span>
-                    <span class="sub-cell devalipi">r</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">Sh<br>ष्</span>
-                    <span class="sub-cell devalipi">Sh</span>
-                </div>
-            </td>
-        </tr>
+            <!-- Retroflex row -->
+            <tr>
+                <th>Retroflex</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">R<br>ऋ</span>
+                        <span class="sub-cell devalipi">R</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">T<br>ट्</span>
+                        <span class="sub-cell devalipi">T</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">Th<br>ठ्</span>
+                        <span class="sub-cell devalipi">Th</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">D<br>ड्</span>
+                        <span class="sub-cell devalipi">D</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">Dh<br>ढ्</span>
+                        <span class="sub-cell devalipi">Dh</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">N<br>ण्</span>
+                        <span class="sub-cell devalipi">N</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">r<br>र्</span>
+                        <span class="sub-cell devalipi">r</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">Sh<br>ष्</span>
+                        <span class="sub-cell devalipi">Sh</span>
+                    </div>
+                </td>
+            </tr>
 
-        <!-- Dental row -->
-        <tr>
-            <th>Dental</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">L<br>ऌ</span>
-                    <span class="sub-cell devalipi">L</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">LL<br>ॡ</span>
-                    <span class="sub-cell devalipi">LL</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">t<br>त्</span>
-                    <span class="sub-cell devalipi">t</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">th<br>थ्</span>
-                    <span class="sub-cell devalipi">th</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">d<br>द्</span>
-                    <span class="sub-cell devalipi">d</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">dh<br>ध्</span>
-                    <span class="sub-cell devalipi">dh</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">n<br>न्</span>
-                    <span class="sub-cell devalipi">n</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">l<br>ल्</span>
-                    <span class="sub-cell devalipi">l</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">s<br>स्</span>
-                    <span class="sub-cell devalipi">s</span>
-                </div>
-            </td>
-        </tr>
+            <!-- Dental row -->
+            <tr>
+                <th>Dental</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">L<br>ऌ</span>
+                        <span class="sub-cell devalipi">L</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">t<br>त्</span>
+                        <span class="sub-cell devalipi">t</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">th<br>थ्</span>
+                        <span class="sub-cell devalipi">th</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">d<br>द्</span>
+                        <span class="sub-cell devalipi">d</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">dh<br>ध्</span>
+                        <span class="sub-cell devalipi">dh</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">n<br>न्</span>
+                        <span class="sub-cell devalipi">n</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">l<br>ल्</span>
+                        <span class="sub-cell devalipi">l</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">s<br>स्</span>
+                        <span class="sub-cell devalipi">s</span>
+                    </div>
+                </td>
+            </tr>
 
-        <!-- Labial row -->
-        <tr>
-            <th>Labial</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">u<br>उ</span>
-                    <span class="sub-cell devalipi">u</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">U/uu<br>ऊ</span>
-                    <span class="sub-cell devalipi">U</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">p<br>प्</span>
-                    <span class="sub-cell devalipi">p</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">ph<br>फ्</span>
-                    <span class="sub-cell devalipi">ph</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">b<br>ब्</span>
-                    <span class="sub-cell devalipi">b</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">bh<br>भ्</span>
-                    <span class="sub-cell devalipi">bh</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">m<br>म्</span>
-                    <span class="sub-cell devalipi">m</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">v<br>व्</span>
-                    <span class="sub-cell devalipi">v</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">f<br>ᳶ</span>
-                    <span class="sub-cell devalipi">f</span>
-                    <a href="#footnote-1">*</a>
-                </div>
-            </td>
-        </tr>
-
-
-    </table></div>
-    <p id="footnote-1">* These are extremely rare (and mostly unheard of) sounds in Sanskrit, known as the <a
+            <!-- Labial row -->
+            <tr>
+                <th>Labial</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">u<br>उ</span>
+                        <span class="sub-cell devalipi">u</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">p<br>प्</span>
+                        <span class="sub-cell devalipi">p</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">ph<br>फ्</span>
+                        <span class="sub-cell devalipi">ph</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">b<br>ब्</span>
+                        <span class="sub-cell devalipi">b</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">bh<br>भ्</span>
+                        <span class="sub-cell devalipi">bh</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">m<br>म्</span>
+                        <span class="sub-cell devalipi">m</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">v<br>व्</span>
+                        <span class="sub-cell devalipi">v</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">f<br>ᳶ</span>
+                        <span class="sub-cell devalipi">f</span>
+                        <a href="#footnote-2">†</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p id="footnote-1" class="footnote">* Semi-vowels (a subset of the approximants) are
+        traditionally unaspirated. However, the author notes two observations.</p>
+        <ol class="footnote">
+            <li>Generalizing semi-vowels to
+                approximants includes the aspirate 'h' (which is aspirated, by definition).</li>
+            <li>Phonetically, 'w' is the true labial semi-vowel. For
+        Sanskrit to have a 'v'-like labial approximant without shifting its class to labiodental, it would have to
+                be aspirated.</li>
+        </ol>
+    <p class="footnote">Thus, the approximants may have originally all been aspirated, if the structure of the table is to be
+        regarded as truth above all else.
+    </p>
+    <p id="footnote-2" class="footnote">† These are extremely rare (and mostly unheard of) sounds in Sanskrit, known as the <a
             href="https://en.wiktionary.org/wiki/%E0%A4%9C%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A5%80%E0%A4%AF#Sanskrit">
         jihvamuliya</a>
         and
@@ -485,336 +479,534 @@
             signs</a> for them do exist in unicode (respectively, <a
                 href="https://en.wiktionary.org/wiki/%E1%B3%B5">ᳵ</a>
         and <a href="https://en.wiktionary.org/wiki/%E1%B3%B6">ᳶ</a>), though they are scarcely used.</p>
-    <p>Beyond this so-called 'magic rectangle', there are 4 other vowels commonly included. They are formed by the <a href="https://en.wikipedia.org/wiki/Sandhi">sandhi</a> of other vowels. As such, they
-    are designed as ligatures of their constituents. Wider width is also reflective of longer speaking-duration
-        .</p>
-    <div class="table-container"><table>
-        <tr>
-            <th></th>
-            <th>Monophthongal</th>
-            <th>Dipthongal</th>
-        </tr>
-        <tr>
-            <th>Palatoguttural</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">e<br>ए</span>
-                    <span class="sub-cell devalipi">e</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">ai<br>ऐ</span>
-                    <span class="sub-cell devalipi">ai</span>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th>Labioguttural</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">o<br>ओ</span>
-                    <span class="sub-cell devalipi">o</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">au<br>औ</span>
-                    <span class="sub-cell devalipi">au</span>
-                </div>
-            </td>
-        </tr>
-</table></div>
-    <p>Lastly, Sanskrit has a nasal and a fricative allophone (called the <a
+    <h1>Additional Characters</h1>
+    <p>Although almost all sounds exist within the 'magic rectangle', there are some nuances,
+        as there more letters to the Devalipi script than these.</p>
+    <h2>Allophones</h2>
+    <p>Sanskrit has extensive use of
+         nasal and fricative <a href="https://en.wikipedia.org/wiki/Allophone">allophones</a>, namely the <a
         href="https://en.wikipedia.org/wiki/Anusvara">anusvara</a>,
     and <a href="https://en.wikipedia.org/wiki/Visarga">visarga</a>
-    respectively).</p>
-    <div class="table-container"><table>
-        <tr>
-            <th></th>
-            <th>Nasal</th>
-            <th>Fricative</th>
-        </tr>
-        <tr>
-            <th>Allophonic</th>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">M<br>ं</span>
-                    <span class="sub-cell devalipi">M</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">H<br>ः</span>
-                    <span class="sub-cell devalipi">H</span>
-                </div>
-            </td>
-        </tr>
-    </table></div>
+    respectively. These often substitute a nasal or fricative consonant, but can exist as unique sounds by
+        themselves, often at the end of phrases.</p>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th></th>
+                <th>Nasal</th>
+                <th>Fricative</th>
+            </tr>
+            <tr>
+                <th>Allophonic</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">M<br>ं</span>
+                        <span class="sub-cell devalipi">M</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">H<br>ः</span>
+                        <span class="sub-cell devalipi">H</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h2>Composite vowels</h2>
+    <p>In Sanskrit grammar, there is a process of joining sounds together called <a
+            href="https://en.wikipedia.org/wiki/Sandhi">sandhi</a>. As such, common joinings often get their own
+        letter, for convenience. Devalipi reflects the sandhi, by making these letters as ligatures of
+        their constituent parts.</p>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th></th>
+                <th colspan="5">Long vowel</th>
+            </tr>
+            <!-- Guttural row -->
+            <tr>
+                <th>Guttural</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">a<br>अ</span>
+                        <span class="sub-cell devalipi">a</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">a<br>अ</span>
+                        <span class="sub-cell devalipi">a</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">A/aa<br>आ</span>
+                        <span class="sub-cell devalipi">A</span>
+                    </div>
+                </td>
+            </tr>
 
+            <!-- Palatal row -->
+            <tr>
+                <th>Palatal</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">i<br>इ</span>
+                        <span class="sub-cell devalipi">i</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">i<br>इ</span>
+                        <span class="sub-cell devalipi">i</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">I/ii<br>ई</span>
+                        <span class="sub-cell devalipi">I</span>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Retroflex row -->
+            <tr>
+                <th>Retroflex</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">R<br>ऋ</span>
+                        <span class="sub-cell devalipi">R</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">R<br>ऋ</span>
+                        <span class="sub-cell devalipi">R</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">RR<br>ॠ</span>
+                        <span class="sub-cell devalipi">RR</span>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Dental row -->
+            <tr>
+                <th>Dental</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">L<br>ऌ</span>
+                        <span class="sub-cell devalipi">L</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">L<br>ऌ</span>
+                        <span class="sub-cell devalipi">L</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">LL<br>ॡ</span>
+                        <span class="sub-cell devalipi">LL</span>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Labial row -->
+            <tr>
+                <th>Labial</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">u<br>उ</span>
+                        <span class="sub-cell devalipi">u</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">u<br>उ</span>
+                        <span class="sub-cell devalipi">u</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">U/uu<br>ऊ</span>
+                        <span class="sub-cell devalipi">U</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th></th>
+                <th colspan="5">Monophthong</th>
+                <th colspan="5">Diphthong</th>
+            </tr>
+            <tr>
+                <th>Palatoguttural</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">a<br>अ</span>
+                        <span class="sub-cell devalipi">a</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">i<br>इ</span>
+                        <span class="sub-cell devalipi">i</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">e<br>ए</span>
+                        <span class="sub-cell devalipi">e</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">a<br>अ</span>
+                        <span class="sub-cell devalipi">a</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">e<br>ए</span>
+                        <span class="sub-cell devalipi">e</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">ai<br>ऐ</span>
+                        <span class="sub-cell devalipi">ai</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Labioguttural</th>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">a<br>अ</span>
+                        <span class="sub-cell devalipi">a</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">u<br>उ</span>
+                        <span class="sub-cell devalipi">u</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">o<br>ओ</span>
+                        <span class="sub-cell devalipi">o</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">a<br>अ</span>
+                        <span class="sub-cell devalipi">a</span>
+                    </div>
+                </td>
+                <td>+</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">o<br>ओ</span>
+                        <span class="sub-cell devalipi">o</span>
+                    </div>
+                </td>
+                <td>=</td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">au<br>औ</span>
+                        <span class="sub-cell devalipi">au</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
     <h1>Example words</h1>
     <p>Here are some example words to get a feeling for the script.</p>
-    <div class="table-container"><table>
+    <div class="table-container">
+        <table>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">ahiMsA<br>अहिंसा</span>
+                        <span class="sub-cell devalipi">ahiMsA</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">AnaMda<br>आनंद</span>
+                        <span class="sub-cell devalipi">AnaMda</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">Asana<br>आसन</span>
+                        <span class="sub-cell devalipi">Asana</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">aShTAMga<br>अष्टांग</span>
+                        <span class="sub-cell devalipi">aShTAMga</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">avidyA<br>अविद्या</span>
+                        <span class="sub-cell devalipi">avidyA</span>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">ahiMsA<br>अहिंसा</span>
-                    <span class="sub-cell devalipi">ahiMsA</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">AnaMda<br>आनंद</span>
-                    <span class="sub-cell devalipi">AnaMda</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">Asana<br>आसन</span>
-                    <span class="sub-cell devalipi">Asana</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">aShTAMga<br>अष्टांग</span>
-                    <span class="sub-cell devalipi">aShTAMga</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">avidyA<br>अविद्या</span>
-                    <span class="sub-cell devalipi">avidyA</span>
-                </div>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">Ayurveda<br>आयुर्वेद</span>
+                        <span class="sub-cell devalipi">Ayurveda</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">bhakti<br>भक्ति</span>
+                        <span class="sub-cell devalipi">bhakti</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">brahma<br>ब्रह्म</span>
+                        <span class="sub-cell devalipi">brahma</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">citta<br>चित्त</span>
+                        <span class="sub-cell devalipi">citta</span>
+                    </div>
+                </td><td>
+                    <div class="flex-container">
+                        <span class="sub-cell">devanAgarI<br>देवनागरी</span>
+                        <span class="sub-cell devalipi">devanAgarI</span>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">Ayurveda<br>आयुर्वेद</span>
-                    <span class="sub-cell devalipi">Ayurveda</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">bhakti<br>भक्ति</span>
-                    <span class="sub-cell devalipi">bhakti</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">brahma<br>ब्रह्म</span>
-                    <span class="sub-cell devalipi">brahma</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">citta<br>चित्त</span>
-                    <span class="sub-cell devalipi">citta</span>
-                </div>
-            </td><td>
-                <div class="flex-container">
-                    <span class="sub-cell">devanAgarI<br>देवनागरी</span>
-                    <span class="sub-cell devalipi">devanAgarI</span>
-                </div>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">dhyAna<br>ध्यान</span>
+                        <span class="sub-cell devalipi">dhyAna</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">dRShTi<br>दृष्टि</span>
+                        <span class="sub-cell devalipi">dRShTi</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">guru<br>गुरु</span>
+                        <span class="sub-cell devalipi">guru</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">nADI<br>नाडी</span>
+                        <span class="sub-cell devalipi">nADI</span>
+                    </div>
+                </td><td>
+                    <div class="flex-container">
+                        <span class="sub-cell">japa<br>जप</span>
+                        <span class="sub-cell devalipi">japa</span>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">dhyAna<br>ध्यान</span>
-                    <span class="sub-cell devalipi">dhyAna</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">dRShTi<br>दृष्टि</span>
-                    <span class="sub-cell devalipi">dRShTi</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">guru<br>गुरु</span>
-                    <span class="sub-cell devalipi">guru</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">nADI<br>नाडी</span>
-                    <span class="sub-cell devalipi">nADI</span>
-                </div>
-            </td><td>
-                <div class="flex-container">
-                    <span class="sub-cell">japa<br>जप</span>
-                    <span class="sub-cell devalipi">japa</span>
-                </div>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">j~nAna<br>ज्ञान</span>
+                        <span class="sub-cell devalipi">j~nAna</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">kosha<br>कोश</span>
+                        <span class="sub-cell devalipi">kosha</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">kuMDalinI<br>कुंडलिनी</span>
+                        <span class="sub-cell devalipi">kuMDalinI</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">maMtram<br>मंत्रम्</span>
+                        <span class="sub-cell devalipi">maMtram</span>
+                    </div>
+                </td><td>
+                    <div class="flex-container">
+                        <span class="sub-cell">maMDala<br>मंडल</span>
+                        <span class="sub-cell devalipi">maMDala</span>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">j~nAna<br>ज्ञान</span>
-                    <span class="sub-cell devalipi">j~nAna</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">kosha<br>कोश</span>
-                    <span class="sub-cell devalipi">kosha</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">kuMDalinI<br>कुंडलिनी</span>
-                    <span class="sub-cell devalipi">kuMDalinI</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">maMtram<br>मंत्रम्</span>
-                    <span class="sub-cell devalipi">maMtram</span>
-                </div>
-            </td><td>
-                <div class="flex-container">
-                    <span class="sub-cell">maMDala<br>मंडल</span>
-                    <span class="sub-cell devalipi">maMDala</span>
-                </div>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">mudra<br>मुद्र</span>
+                        <span class="sub-cell devalipi">mudra</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">namaHte<br>नमःते</span>
+                        <span class="sub-cell devalipi">namaHte</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">nirodha<br>निरोध</span>
+                        <span class="sub-cell devalipi">nirodha</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">niyama<br>नियम</span>
+                        <span class="sub-cell devalipi">niyama</span>
+                    </div>
+                </td><td>
+                    <div class="flex-container">
+                        <span class="sub-cell">oM<br>ॐ</span>
+                        <span class="sub-cell devalipi">oM</span>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">mudra<br>मुद्र</span>
-                    <span class="sub-cell devalipi">mudra</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">namaHte<br>नमःते</span>
-                    <span class="sub-cell devalipi">namaHte</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">nirodha<br>निरोध</span>
-                    <span class="sub-cell devalipi">nirodha</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">niyama<br>नियम</span>
-                    <span class="sub-cell devalipi">niyama</span>
-                </div>
-            </td><td>
-                <div class="flex-container">
-                    <span class="sub-cell">oM<br>ॐ</span>
-                    <span class="sub-cell devalipi">oM</span>
-                </div>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">piMgala<br>पिंगल</span>
+                        <span class="sub-cell devalipi">piMgala</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">praj~na<br>प्रज्ञ</span>
+                        <span class="sub-cell devalipi">praj~na</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">prANa<br>प्राण</span>
+                        <span class="sub-cell devalipi">prANa</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">pratyAhAra<br>प्रत्याहार</span>
+                        <span class="sub-cell devalipi">pratyAhAra</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">samAdhi<br>समाधि</span>
+                        <span class="sub-cell devalipi">samAdhi</span>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">piMgala<br>पिंगल</span>
-                    <span class="sub-cell devalipi">piMgala</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">praj~na<br>प्रज्ञ</span>
-                    <span class="sub-cell devalipi">praj~na</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">prANa<br>प्राण</span>
-                    <span class="sub-cell devalipi">prANa</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">pratyAhAra<br>प्रत्याहार</span>
-                    <span class="sub-cell devalipi">pratyAhAra</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">samAdhi<br>समाधि</span>
-                    <span class="sub-cell devalipi">samAdhi</span>
-                </div>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">saMskAra<br>संस्कार</span>
+                        <span class="sub-cell devalipi">saMskAra</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">satya<br>सत्य</span>
+                        <span class="sub-cell devalipi">satya</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">shakti<br>शक्ति</span>
+                        <span class="sub-cell devalipi">shakti</span>
+                    </div>
+                </td><td>
+                    <div class="flex-container">
+                        <span class="sub-cell">sUtra<br>सूत्र</span>
+                        <span class="sub-cell devalipi">sUtra</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">svAdhyAya<br>स्वाध्याय</span>
+                        <span class="sub-cell devalipi">svAdhyAya</span>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">saMskAra<br>संस्कार</span>
-                    <span class="sub-cell devalipi">saMskAra</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">satya<br>सत्य</span>
-                    <span class="sub-cell devalipi">satya</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">shakti<br>शक्ति</span>
-                    <span class="sub-cell devalipi">shakti</span>
-                </div>
-            </td><td>
-                <div class="flex-container">
-                    <span class="sub-cell">sUtra<br>सूत्र</span>
-                    <span class="sub-cell devalipi">sUtra</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">svAdhyAya<br>स्वाध्याय</span>
-                    <span class="sub-cell devalipi">svAdhyAya</span>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">tapas<br>तपस्</span>
-                    <span class="sub-cell devalipi">tapas</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">viveka<br>विवेक</span>
-                    <span class="sub-cell devalipi">viveka</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">yama<br>यम</span>
-                    <span class="sub-cell devalipi">yama</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">yaMtra<br>यंत्र</span>
-                    <span class="sub-cell devalipi">yaMtra</span>
-                </div>
-            </td>
-            <td>
-                <div class="flex-container">
-                    <span class="sub-cell">yoga<br>योग</span>
-                    <span class="sub-cell devalipi">yoga</span>
-                </div>
-            </td>
-        </tr>
-    </table></div>
+            <tr>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">tapas<br>तपस्</span>
+                        <span class="sub-cell devalipi">tapas</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">viveka<br>विवेक</span>
+                        <span class="sub-cell devalipi">viveka</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">yama<br>यम</span>
+                        <span class="sub-cell devalipi">yama</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">yaMtra<br>यंत्र</span>
+                        <span class="sub-cell devalipi">yaMtra</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="flex-container">
+                        <span class="sub-cell">yoga<br>योग</span>
+                        <span class="sub-cell devalipi">yoga</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
     <p>Common examples for where Devalipi may express the jihvamulia and upadhmaniya include the
     Sanskrit word for suffering, <a href="https://en.wikipedia.org/wiki/Du%E1%B8%A5kha">duhkha</a>, and the last two
     words of the famous <a href="https://en.wikipedia.org/wiki/Gayatri_Mantra">Gayatri mantra</a>. Since most scripts
@@ -912,7 +1104,7 @@
         <tr>
             <th>Guttural</th>
             <td><span class="devalipi">g</span></td>
-            <td><span class="devalipi">h</span><a href="#footnote-2">†</a></td>
+            <td><span class="devalipi">h</span><a href="#footnote-3">‡</a></td>
             <td><span class="devalipi">a</span></td>
         </tr>
         <tr>
@@ -944,7 +1136,8 @@
         </span></td>
         </tr>
     </table></div>
-    <p id="footnote-2">† Technically, there is no such thing as a guttural semi-vowel. However, generalizing the
+    <p id="footnote-3" class="footnote">‡ Technically, there is no such thing as a guttural semi-vowel. However,
+        generalizing the
         class to
         <a href="https://en.wikipedia.org/wiki/Approximant">approximants</a> (which semi-vowels are a subset of)
             completes the set.</p>
@@ -962,7 +1155,7 @@
         would be.</p>
     <div class="table-container"><table>
         <tr>
-            <th></th><th>Unvoiced</th><th>Unvoiced</th>
+            <th></th><th>Voiced</th><th>Unvoiced</th>
         </tr>
         <tr>
             <th>Guttural</th>
@@ -995,7 +1188,7 @@
     be aspirated or not. This information is expressed with a swirl (of "wind") at the bottom of each glyph.</p>
     <div class="table-container"><table>
         <tr>
-            <th></th><th>Consonant</th><th>Aspirated</th>
+            <th></th><th>Unaspirated</th><th>Aspirated</th>
         </tr>
         <tr>
             <th>Guttural</th>
@@ -1030,7 +1223,7 @@
             <th>Fricative Allophone</th><th>Example</th>
         </tr>
         <tr>
-            <td><span class="devalipi">H</span></td><td><span class="devalipi">gaH</span></td>
+            <td><span class="devalipi">H</span></td><td><span class="devalipi">aH</span></td>
         </tr>
     </table></div>
     <h3>Nasalization</h3>
@@ -1076,7 +1269,7 @@
             <th>Nasal Allophone</th><th>Example</th>
         </tr>
         <tr>
-            <td><span class="devalipi">M</span></td><td><span class="devalipi">gaM</span></td>
+            <td><span class="devalipi">M</span></td><td><span class="devalipi">aM</span></td>
         </tr>
     </table></div>
 </div>
