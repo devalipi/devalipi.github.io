@@ -6,111 +6,96 @@
     <title>The Devalipi Script</title>
     <style>
         @font-face {
-          font-family: 'devalipi', sans-serif;
-          src: url('devalipi.woff') format('wof');
-          src: url('devalipi.woff2') format('woff2');
-          src: url('devalipi.ttf') format('truetype');
-          src: url('devalipi.svg') format('svg');
-          src: url('devalipi.otf') format('opentype');
+          font-family: devalipi;
+          src: url("fonts/devalipi.woff2") format("woff2"),
+               url("fonts/devalipi.woff") format("woff"),
+               url("fonts/devalipi.ttf") format("truetype"),
+               url("fonts/devalipi.svg#devalipi") format("svg"),
+               url("fonts/devalipi.otf") format("opentype");
         }
 
         body {
-          margin: 10%;
-          max-width: 1000px;
-          padding: 0;
-          background: #000000;
+            margin : 10%;
+            max-width : 1000px;
+            padding : 0;
+            background : #000000;
         }
-
         .content {
-          font-family: Open Sans, sans-serif; /* Default font for the website */
-          font-weight: 600;
-          line-height: 1.6;
-          background: #FFFFFFB0;
-          box-shadow: 0 0 30px 60px #FFFFFFB0;
+            font-family : "Open Sans", sans-serif;
+            font-weight : 600;
+            line-height : 1.6;
+            background : #FFFFFFB0;
+            box-shadow : 0 0 30px 60px #FFFFFFB0;
         }
-
-       .background {
-         position: fixed; /* Fixed background */
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         z-index: -1; /* Place the background behind the content */
-
-         /* Fallback for browsers that don't support backdrop-filter */
-         background: url('bg.png') no-repeat center center fixed;
-         background-size: cover;
-
-         filter: blur(10px);
-       }
-
+        .background {
+            position : fixed;
+            top : 0;
+            left : 0;
+            right : 0;
+            bottom : 0;
+            z-index : -1;
+            background : url("bg.png") center center no-repeat fixed;
+            background-size : cover;
+            filter : blur(10px);
+        }
         .table-container {
-             overflow-x: auto;
-             text-align: center;
-         }
-
-       table {
-           border-collapse: collapse;
-         white-space: nowrap;
-         margin-left: auto;
-         margin-right: auto;
-         display: inline-table;
-       }
-
-       h1 {
-        text-align: center;
-       }
-
+            overflow-x : auto;
+            text-align : center;
+        }
+        table {
+            border-collapse : collapse;
+            white-space : nowrap;
+            margin-left : auto;
+            margin-right : auto;
+            display : inline-table;
+        }
+        h1 {
+            text-align : center;
+        }
         .devalipi {
-          font-family: 'devalipi', sans-serif; /* Specific font for elements with this class */
-          font-size: 3em; /* This will make the font larger than the surrounding text */
-          line-height: 1.1;
-          font-weight: 300;
+            font-family : devalipi, sans-serif;
+            font-size : 3em;
+            line-height : 1.1;
+            font-weight : 300;
         }
-
         .sideways-devalipi {
-          font-family: 'devalipi', sans-serif; /* Specific font for elements with this class */
-          font-size: 3em; /* This will make the font larger than the surrounding text */
-          line-height: 1.1;
-          font-weight: 300;
-          writing-mode: vertical-lr;
-          text-orientation: sideways;
-          transform: scale(-1)
+            font-family : devalipi, sans-serif;
+            font-size : 3em;
+            line-height : 1.1;
+            font-weight : 300;
+            writing-mode : vertical-lr;
+            text-orientation : sideways;
+            transform : scale(-1);
         }
-
         .sub-cell.devalipi {
-          font-size: 3.5em; /* This will make the font larger than the surrounding text */
-          border: 1px solid #00000018;
+            font-size : 3.5em;
+            border : #00000018 solid 1px;
         }
-
         th {
-          border: 1px solid #000;
-          text-align: center;
-          background-color: #00000018;
-          padding: 4px;
+            border : #000 solid 1px;
+            text-align : center;
+            background-color : #00000018;
+            padding : 4px;
         }
-
         td {
-          text-align: center;
-          padding: 4px;
-          border: 1px solid #000;
-          background-color: #FFFFFF30;
+            text-align : center;
+            padding : 4px;
+            border : #000 solid 1px;
+            background-color : #FFFFFF30;
         }
-
         .flex-container {
-          display: flex;
-          justify-content: space-around; /* Evenly distribute sub-cells horizontally */
-          align-items: stretch; /* Stretch sub-cells to fill container vertically */
-          height: 100%; /* This forces the container to fill parent's (td) height */
-          width: 100%; /* Make sure the container spans the full width of td */
+            display : flex;
+            justify-content : space-around;
+            align-items : stretch;
+            height : 100%;
+            width : 100%;
         }
-
         .sub-cell {
-          padding: 4px;
-          flex: 1; /* Allow each sub-cell to grow and take up equal space */
-          display: flex; /* Making sub-cell a flex container can help center its content */
-          justify-content: center;
-          align-items: center; /* This will center the text vertically */
+            padding : 4px;
+            flex : 1;
+            display : flex;
+            justify-content : center;
+            align-items : center;
         }
     </style>
 </head>
